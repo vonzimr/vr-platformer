@@ -21,7 +21,7 @@ gulp.task('watch', function (){
   var server = gls.new(__dirname + '/app.js');
   serverNotify = function(file){server.notify(file);};
   server.start();
-  gulp.watch('dist/js/*.js', serverNotify);
+  gulp.watch('js/*.js', serverNotify);
   gulp.watch('src/js/**/*.js', ['browserify']);
   //other watchers
 });
