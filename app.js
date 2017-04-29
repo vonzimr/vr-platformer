@@ -14,7 +14,7 @@ nunjucks.configure(__dirname + '/views', {
 app.use(require('connect-livereload')({
     port: 35729
 }));
-app.use(express.static('dist'));
+app.use(express.static('static'));
 app.set('view engine', 'nunjucks');
 
 
